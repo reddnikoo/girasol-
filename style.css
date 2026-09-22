@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+.scene {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.dedication-box {
+    position: absolute;
+
+    right: 55px;
+    top: 50%;
+
+    z-index: 10;
+
+    transform:
+        translateY(-50%)
+        translateX(25px);
+
+    width: 230px;
+    min-height: 330px;
+
+    padding: 28px 24px;
+
+    background:
+        rgba(10, 10, 10, 0.88);
+
+    border:
+        1px solid rgba(250, 204, 21, 0.75);
+
+    border-radius: 22px;
+
+    color: #f8fafc;
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    line-height: 1.7;
+
+    box-shadow:
+        0 12px 40px
+        rgba(0, 0, 0, 0.45);
+
+    opacity: 0;
+
+    transition:
+        opacity 1.2s ease,
+        transform 1.2s ease;
+
+    pointer-events: none;
+}
+
+.dedication-box.show {
+    opacity: 1;
+
+    transform:
+        translateY(-50%)
+        translateX(0);
+}
+
+.dedication-box h2 {
+    margin: 0 0 20px;
+
+    color: #facc15;
+
+    font-size: 24px;
+
+    text-align: center;
+}
+
+.dedication-box p {
+    margin: 0;
+
+    color: #e2e8f0;
+
+    font-size: 16px;
+
+    text-align: left;
+}
+
+.signature {
+    display: block;
+
+    margin-top: 28px;
+
+    color: #facc15;
+
+    font-size: 14px;
+
+    text-align: right;
+}
